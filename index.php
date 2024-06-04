@@ -13,17 +13,17 @@ $catCategory->setIcon("fa-solid fa-cat");
 // var_dump($dogCategory);
 // var_dump($catCategory);
 
-$catFood = new Food("Sheba bocconcini gatti", 3, 85);
-$catFood->setImage("https://iperverde.it/cdn/shop/products/cibo-umido-gatto-sheba-selezione-in-salsa-85-gr-vitello-tacchino.jpg?v=1634725379");
-$catFood->category = $catCategory;
+$Sheba = new Food("Sheba bocconcini gatti", 3, 85);
+$Sheba->setImage("https://iperverde.it/cdn/shop/products/cibo-umido-gatto-sheba-selezione-in-salsa-85-gr-vitello-tacchino.jpg?v=1634725379");
+$Sheba->category = $catCategory;
 
-$dogFood = new Food("Cesar bocconcini cani", 5.50, 150);
-$dogFood->setImage("https://m.media-amazon.com/images/I/81h0Hiu8IsL._AC_SX679_PIbundle-14,TopRight,0,0_SH20_.jpg");
-$dogFood->category = $dogCategory;
+$Cesar = new Food("Cesar bocconcini cani", 5.50, 150);
+$Cesar->setImage("https://m.media-amazon.com/images/I/81h0Hiu8IsL._AC_SX679_PIbundle-14,TopRight,0,0_SH20_.jpg");
+$Cesar->category = $dogCategory;
 
-$newDogFood = new Food("Almo Nature cani", 5.50, 150);
-$newDogFood->setImage("https://www.bauzaar.it/media/catalog/product/d/a/daily-tacchino-zucchine_1.png?width=700&height=700&store=default&image-type=image");
-$newDogFood->category = $dogCategory;
+$Almo = new Food("Almo Nature cani", 5.50, 150);
+$Almo->setImage("https://www.bauzaar.it/media/catalog/product/d/a/daily-tacchino-zucchine_1.png?width=700&height=700&store=default&image-type=image");
+$Almo->category = $dogCategory;
 
 $scratch = new Toy("Tiragraffi per gatti", 10);
 $scratch->setImage("https://encrypted-tbn2.gstatic.com/shopping?q=tbn:ANd9GcQHu8jm_vNFTwZuIXS3UaTfFIli2JW03FddMNASTFizLMwhQCLA_CO1qbm2ADGIyIa_e10kmBp9JXOodJbGg1rpPOnRsAVKWvgZj3hHuKVMBOflCLIw0saaYLo1QlybM2OjzBN2ZQ&usqp=CAc");
@@ -38,7 +38,7 @@ $dogRope->setImage("https://arcaplanet.vtexassets.com/arquivos/ids/223864/trixie
 $dogRope->category = $dogCategory;
 
 
-$catalogue = [$catFood, $dogFood, $newDogFood, $scratch, $ball, $dogRope];
+$catalogue = [$Sheba, $Cesar, $Almo, $scratch, $ball, $dogRope];
 
 ?>
 
